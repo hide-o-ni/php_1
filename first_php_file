@@ -1,0 +1,180 @@
+
+
+<?php 
+//$var="hello";
+$house=60*60; //количество секунд в часе
+$day = 24*$house; //количество секунд в  сутках
+$month31 = $day*31; //месяц, если 31 день
+$month30 = $day*30; //месяц, если 30 дней
+$month28 = $day*28; //месяц, если 28 дней
+$month29 = $day*29; //месяц, если 29 дней
+
+/*echo $var[0]; 
+echo $var[1]; 
+echo $var[strlen($var)-1];
+
+echo "В часе $house секунд";
+$var = 1;
+$var = $var += 12;
+$var = $var -= 14;
+$var = $var *= 5;
+$var = $var /= 7;
+$var = $var ++;
+$var = $var --;
+echo $var;
+echo $a=3;
+$a=10;
+$b=2;
+echo $a+$b;
+echo $a-$b; 
+echo $a*$b; 
+echo $a/$b 
+
+$c=15;
+$d=2;
+echo $result =$c*$d;
+$text ='Привет, мир!';
+echo $text;
+$name="Hell";
+echo "Привет, $name !";
+$age = 28;
+echo "Мне $age лет";
+echo "Если в месяце 31 день, то он содержит $month31 секунд";
+echo "если в месяце 30 дней, то он содержит $month30 секунд";
+echo "Если в месяце 28 дней, то он содержит $month28 секунд";
+echo "если в месяце 29 дней, то он содержит $month29 секунд";*/
+$sec = 40;
+$hou = 14;
+$min =23;
+echo " Время $hou:$min:$sec ";
+$st = 121;
+$st2 = $st*$st;
+echo "Число $st в квадрате $st2";
+
+$t1=47;
+$t1 = $t1 + 7;
+$t1 = $t1 - 18;
+$t1 = $t1 * 10;
+$t1 = $t1 / 20;
+echo "Число t1 - $t1";
+
+$text = 'Я';
+$text .=' хочу';
+$text .= ' знать';
+$text .= ' PHP!';
+echo $text;
+
+$t2 = 10;
+$t2 = ++$t2;
+$t2 = $t2++;
+$t2 = --$t2;
+echo $t2;
+
+$t3 = 10;
+$t3 += 7;
+$t3 = ++$t3;
+$t3 = --$t3;
+$t3 += 12;
+$t3 *= 7;
+$t3 -=  15;
+echo $t3;
+
+$arr = ['a','b','c'];
+echo $arr[0].$arr[1].$arr[2];
+$tex1 = $arr[0].$arr[1].$arr[2];
+echo $tex1;
+$arr[0] = 'm';
+var_dump($arr);
+$arr1 = ['Вася'=>'1000','Петя'=>'700','Коля'=>'500'];
+echo $arr1 ['Вася'],',',$arr1['Коля'];
+$arr2 [] = '1';
+$arr2 [] = '2';
+$arr2 [] = '3';
+$arr2 [] = '4';
+$arr2 [] = '5';
+var_dump($arr2);
+$arr3 = [
+    'cms' => ['joomla','wordpress','drupal'],
+    'colors' => ['red' =>'красный','blue' =>'синий', 'green' => 'зеленый']
+    ];
+//var_dump($arr3 ['cms'])
+echo $arr3 ['cms'][0],',', $arr3 ['cms'][1];
+$arr4 = [
+    'ru'=> ['0','понедельник','вторник', 'среда','четверг','пятница','суббота', 'воскресенье'],
+    'en' => ['0','monday','tuesday','wednessday','thursday','friday','saturday','subday']
+    ];
+echo $arr4['ru'][1],',',$arr4['en'][3];
+$lang = 'en';
+$day = 5;
+echo ',',$arr4 [$lang][$day];
+$a = -1;
+$b = 6;
+$sum = 0;
+/*if ($a === '1') echo 'Верно!'; else echo 'Неверно!';
+if (empty($a)) echo 'Верно!'; else echo 'Неверно!';
+if (!empty($a)) echo 'верно!'; else echo 'Неверно!';
+if (!isset($a)) echo 'верно'; else echo 'неверно';
+if ($a) echo 'верно'; else echo 'неверно';
+
+//if ($a == true) echo 'Верно';else 'Неверно';
+if ($a != true) {
+    echo 'Верно';
+    }
+    else {
+        echo 'Неверно';
+    }
+
+if ($a == 0 || $a == 2) {
+    $a +=7;
+    echo '(',$a,')';
+}
+else {
+   $a /=10;
+   echo $a;
+}
+if ($a <= 1 && $b >=3) {
+    $sum = $a + $b;
+    echo '(', $sum, ')';
+}
+else {
+    $sum = $a -$b;
+    echo '(',$sum, ')';
+}
+$num = 4;
+if (($a > 2 && $a < 11) || ($b >=6 && $b < 14)) echo 'верно'; else echo 'неверно';
+switch ($num) {
+    case '1': 
+        echo 'зима';
+    break;
+    case '2':
+        echo 'весна';
+    break;
+    case '3':
+        echo 'лето';
+    break;
+    case '4':
+         echo 'осень';
+    break;
+     default: echo 'Нет такого времени года';
+}*/
+$day = 17; // 1 до 31
+if ($day >=1 && $day <=10) {
+        echo 'Первая декада'; 
+           } elseif ($day >=11 && $day <=21) {
+                echo 'Вторая декада';
+            }
+                elseif ($day >=22 && $day <=31) {
+                    echo 'Третья декада';
+                }
+$month = 11;// от 1 до 12
+
+if ($month == 12 || ($month >= 1 && $month <= 2)) { 
+    echo 'Зима'; 
+        } elseif ($month >=3 && $month <=5){
+            echo 'Весна';
+        } elseif ($month >=6 && $month <=8){
+            echo 'Лето';
+        } elseif ($month >=9 && $month <=11) {
+            echo 'Осень';
+        }
+?>
