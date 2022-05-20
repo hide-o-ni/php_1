@@ -35,7 +35,7 @@ $d=2;
 echo $result =$c*$d;
 $text ='Привет, мир!';
 echo $text;
-$name="Hell";
+$name="Ольга";
 echo "Привет, $name !";
 $age = 28;
 echo "Мне $age лет";
@@ -177,4 +177,145 @@ if ($month == 12 || ($month >= 1 && $month <= 2)) {
         } elseif ($month >=9 && $month <=11) {
             echo 'Осень';
         }
+$year = 1800;
+if (($year%4==0) && !($year%100==0)) {
+    echo 'Год является високосным';
+}
+        elseif ($year%400==0) {
+            echo 'Год является високосным';  
+         }   
+                else {
+                     echo 'Год не является високосным';
+                 }
+$str = 'abcde';
+if ($str[0] =='a') {
+    echo 'да';
+} 
+    else {
+        echo 'нет';
+    }
+
+$str1 ='12345';
+if ($str1[0] =='1') {
+    echo 'Да';
+}       
+else {
+        echo 'нет';
+    }
+
+$str3 = '821';
+$sum_str3 = $str3[0]+ $str3[1]+$str3 [2];
+echo $sum_str3;
+
+$str4 = '123321';
+if ($str4[0]+$str4[1]+$str4[2] == $str4[3]+$str4[4]+$str4[5]) {
+    echo 'Да';
+}
+else {
+    echo 'Нет';
+}
+//много разных циклов
+$array = ['html','css','php','js','jq']; //каждый цикл - отдельная задача
+foreach ($array as $value) {
+    echo $value.' , ';
+}
+$result =0;
+$array1 = ['1','2','3','4','5'];
+foreach ($array1 as $value) {
+    $result += $value;
+}
+echo $result;
+
+$summ1 =0;
+$pow = 0;
+foreach ($array1 as $value):
+   $pow = $value*$value;
+   $summ1 += $pow;
+   $pow = 0;
+   endforeach;
+echo $summ1;
+
+$array2 = ['red'=>'красный','green'=>'зеленый','blue'=>'синий'];
+var_dump($array2);
+foreach ($array2 as $key => $value) {
+    echo $key.'-'.$value.' ';
+}    
+$array3 = ['Jon'=>'500','Mary'=>'700','Ann'=>'600'];
+foreach ($array3 as $key => $value) {
+    echo $key.'- salary '.$value.'$ ';
+}
+
+//while
+$i = 0;
+while ($i<=100) {
+    echo $i.' ';
+    $i++;
+}
+$i=11;
+while ($i>=11 && $i<=33){
+    echo $i.' ';
+    $i++;
+}
+
+$i =0;
+while ($i<=100) {
+    if ($i%2==0) {
+        echo $i.' ';
+        }
+    $i++;
+}
+$i=0;
+$summ2 = 0;
+while ($i<=100){
+    $summ2 += $i;
+    $i++;
+}
+echo $summ2;
+//for
+//те же самые задачи, что и на while
+
+for ($i=0;$i<=100;$i++){
+    echo $i.' ';
+}
+
+for ($i=11;$i<=33;$i++){
+    echo $i.' ';
+}
+
+for ($i=0;$i<=100;$i++){
+    if ($i%2==0) {
+        echo $i.' ';
+    }
+}
+$summ3 = 0;
+for ($i=0;$i<=100;$i++) {
+    $summ3 += $i;
+}
+echo $summ3;
+
+$array4 = ['2','5','9','15','0','4'];
+foreach ($array4 as $value) {
+    if ($value > 3 && $value < 10) {
+        echo $value.' , ';
+    }
+}
+$summ4 = 0;
+$array5 = ['0','2','-1','4','-7','-8','-3'];
+foreach ($array5 as $value) {
+    if ($value>0) {
+        $summ4 +=$value;
+    }
+}
+echo $summ4;
+
+$array6 = ['1','2','5','9','4','13','4','10'];
+foreach ($array6 as $value) {
+    if ($value == '4') {
+        echo 'Да';
+        break;
+    }
+}
+$array7 = ['10', '20', '30', '50', '235', '3000'];
+
+
 ?>
